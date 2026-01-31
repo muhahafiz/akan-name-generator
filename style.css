@@ -1,0 +1,30 @@
+body {
+font-family: Oswald, Helvetica, sans-serif;
+background-color: black;
+color: aliceblue;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+min-height: 50vh;
+margin: 0%;
+}
+.Header{
+border-style: white;
+    border-width: 1px;
+}
+.title{
+    text-align: center;
+    font-size: 30px;
+}
+.title1{
+    text-align: center;
+    font-size: 30px;
+}
+.strong{
+    text-align: center;
+}
+.form{
+align-items: center;
+justify-content: center;
+overflow: hidden;
+}
