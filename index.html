@@ -3,18 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BIRTH DATE GUESSER</title>
-    
+    <title>NAME KASA</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1></h1>
-    <p><strong>HELLO! Im a bi</strong></p>
-    <form action="/submit" method="post">
-        <label for="Birthday">birthdate</label>
-        <input type="datetime" id="birthdate" name="DOB">
+    <section class="Header">
+    <h1>Akan name generator</h1>
+    <p>Enter your birthdate and gender to find out your Ghanian name the names are based omn the days of the week <strong>PLAY TO FIND OUT!!!!</strong> </p>
+<form id="akanForm">
+  <div class="form-group">
+    <label for="birthdate">Birthdate:</label>
+    <input type="date" id="birthdate" name="birthdate" required />
+  </div>
+
+  <div class="form-group">
+    <label>Gender:</label>
+    <div class="radio-group">
+      <label>
+        <input type="radio" name="gender" value="male" required />
+        Male
+      </label>
+      <label>
+        <input type="radio" name="gender" value="female" required />
+        Female
+      </label>
+    </div>
+  </div>
+
+  <button type="submit">Get Akan Name</button>
+</form>
+
+<section id="result" class="result"></section>
+</section>
 
 
-
-    </form>
 </body>
 </html>
