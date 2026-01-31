@@ -29,3 +29,8 @@ margin: 0%;
     justify-content: center;
     font-size: 30px;
 } 
+#birthdate{
+    height: 30px;
+    margin-top: 8px;
+background-color: purple;
+}
