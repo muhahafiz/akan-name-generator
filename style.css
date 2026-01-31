@@ -9,8 +9,9 @@ min-height: 50vh;
 margin: 0%;
 }
 .Header{
-border-style: white;
+    border: solid 1px white;
     border-width: 1px;
+    margin-top: 100px;
 }
 .title{
     text-align: center;
@@ -23,8 +24,8 @@ border-style: white;
 .strong{
     text-align: center;
 }
-.form{
-align-items: center;
-justify-content: center;
-overflow: hidden;
-}
+.form1 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+} 
