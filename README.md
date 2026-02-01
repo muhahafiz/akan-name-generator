@@ -13,6 +13,12 @@ The akan-name-generator website should open.
 # Links
 //add the links to website //
 
+# Technologies used
+HtML and JavaScript
+
+# Contact information
+[Email Me](mailto:muhahafi340@gmail.com)
+
 ## License
 MIT
 

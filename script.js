@@ -16,6 +16,17 @@ const MaleNames = {
   Saturday: "Kofi",
   Sunday: "Kwame",
 };
+
+const dayMapping = [
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+  "Sunday",
+  "Monday",
+  "Tuesday",
+];
+
 const form = document.forms["form"];
 const result = document.getElementById("aka");
 
@@ -27,18 +38,27 @@ function validateGender(gender) {
 }
 
 function validateDate(month, date) {
-  if ((date >= 1 || date <= 31) && (month >= 1 || month <= 12)) {
+  if (date >= 1 && date <= 31 && month >= 1 && month <= 12) {
     return true;
   }
   return false;
 }
+
+function getName(gender, dayOfWeek) {
+  if (gender === "male") {
+    return MaleNames[dayOfWeek];
+  } else {
+    return FemaleNames[dayOfWeek];
+  }
+}
+
 function calculateDayOfWeek(date, month, year) {
   const CC = Math.floor(year / 100);
   const YY = year % 100;
   const MM = month;
   const DD = date;
   const d = (4 * CC - 2 * CC - 1 + 45 * YY + 1026 * (MM + 1) + DD) % 7;
-  return d;
+  return dayMapping[d];
 }
 
 function generator(event) {
@@ -65,7 +85,9 @@ function generator(event) {
     );
   }
 
- const = is
+  const dayOfWeek = calculateDayOfWeek(date, month, year);
+  const name = getName(gender, dayOfWeek);
+  result.textContent = name;
 }
 
 form.addEventListener("submit", generator);
