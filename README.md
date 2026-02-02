@@ -9,6 +9,7 @@ This is website application authored by [Muhammad Hafiz](https://github.com/muha
 4.Click the go live butto n on the bottom of the screen bar of VS Code as shown below 
 ![VS Code screenshot](images/Golive.png) to see the web application
 The akan-name-generator website should open.
+5.Play to find out 
 
 # Links
 [text](https://muhahafiz.github.io/akan-name-generator/)
