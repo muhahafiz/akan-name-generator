@@ -11,7 +11,7 @@ This is website application authored by [Muhammad Hafiz](https://github.com/muha
 The akan-name-generator website should open.
 
 # Links
-//add the links to website //
+[text](https://muhahafiz.github.io/akan-name-generator/)
 
 # Technologies used
 HtML and JavaScript
